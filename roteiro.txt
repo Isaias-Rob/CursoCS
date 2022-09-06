@@ -1,0 +1,8 @@
+mkdir "pasta_raiz"
+cd "pasta_raiz"
+dotnet new sln --name "Nome da solucao"
+mkdir "sub_pasta"
+cd "sub_pasta"
+dotnet new console
+cd ..
+dotnet sln add pasta\sub_pasta.csproj
