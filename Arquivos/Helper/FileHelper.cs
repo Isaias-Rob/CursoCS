@@ -35,7 +35,15 @@ namespace Arquivos.Helper
             var retorno = Directory.CreateDirectory(caminho);
             System.Console.WriteLine(retorno.FullName);
             System.Console.WriteLine("Criado!");
-            
+        }
+
+        public void ApagarDiretorio(string caminho, bool apagarArquivos){
+            Directory.Delete(caminho,apagarArquivos); //Causara erros se o diretorio conter arquivos e o bool estiver como false
+
+        }
+
+        public void CriarArquivoTxt(string caminho, string conteudo){
+            File.WriteAllText(caminho,conteudo);
         }
     }
 }

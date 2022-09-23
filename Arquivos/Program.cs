@@ -9,5 +9,6 @@ helper.ListarArquivosDiretorios(caminho);
 System.Console.WriteLine("\n\n\n");
 helper.ListarArquivosDiretorios(caminho,"*.txt");
 System.Console.WriteLine("\n\n\n");
-System.Console.WriteLine("Criando o diretorio: ");
-helper.CriarDiretorio(Path.Combine(caminho,"Pasta 3", "SubPasta 2"));
+//System.Console.WriteLine("Criando o diretorio: ");
+//helper.CriarDiretorio(Path.Combine(caminho,"Pasta 3", "SubPasta 2"));
+helper.ApagarDiretorio(Path.Combine(caminho, "Pasta 1","SubPasta 1"),true);
