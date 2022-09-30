@@ -25,4 +25,3 @@ helper.LerImprimirArquivoStream(caminho_arquivo2);
 helper.MoverArquivo(caminho_arquivo, Path.Combine(caminho,"Pasta 2","arquivo_novo_nome.txt"));
 helper.CopiarArquivo(Path.Combine(caminho,"Pasta 2","arquivo_novo_nome.txt"),Path.Combine(caminho,"Pasta 3","arquivo_teste.txt"),false);
 helper.DeletarArquivo(Path.Combine(caminho,"Pasta 2","arquivo_novo_nome.txt"));
-
